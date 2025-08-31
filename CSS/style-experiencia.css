@@ -1,0 +1,114 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(0, 0%, 10%);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow-x: hidden;
+}
+
+body > a {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+    background-color: hsl(59, 100%, 50%);
+
+    border-radius: 5px;
+    padding: 5px;
+
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    width: 75%;
+    height: 90%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 20%);
+
+    transition: 0.5s ease-out;
+    border-radius: 15px;
+    box-shadow: 5px 8px 5px 2px hsl(0, 0%, 6%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    
+    margin-top: 15px;
+}
+
+.card img[alt="IFPR"] {
+    width: 120px;
+}
+
+.card img[alt="Java"] {
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+
+    border-radius: 30px;
+    background: linear-gradient(to left, hsl(0, 0%, 95%), hsl(0, 0%, 70%));
+}
+
+.card ul {
+    width: 80%;
+    height: 70%;
+
+    color: white;
+    list-style-type: square;
+}
+
+.card li {
+    margin-top: 5px;
+}
+
+.card a {
+    color: aqua;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+.card i {
+    font-weight: bolder;
+    font-size: xx-large;
+    color: red;
+}
+
+.red {
+    color: rgb(255, 40, 40);
+}
