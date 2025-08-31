@@ -46,7 +46,7 @@ header a:hover {
 
 main {
     width: 100vw;
-    height: 1400px;
+    height: 1500px;
 
     display: flex;
     flex-direction: column;
@@ -201,7 +201,7 @@ main {
     margin-top: 50px;
 
     width: 70%;
-    height: 250px;
+    height: 300px;
 
     display: flex;
     flex-direction: column;
@@ -221,11 +221,13 @@ main {
 
 #experience img {
     width: 100px;
+    margin-bottom: 10px;
 }
 
 #experience div {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
 }
 
 #experience div figure {
@@ -234,9 +236,26 @@ main {
     width: 90px;
 }
 
+#experience div figcaption {
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#experience a {
+    color: aqua;
+    margin: 30px;
+    align-self: flex-end;
+    text-decoration: none;
+}
+
+#experience a:hover {
+    text-decoration: underline;
+}
+
 #contact {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     
     width: 70%;
     height: 250px;
@@ -264,6 +283,21 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+}
+
+#contact a {
+    color: aqua;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+#contact > p {
+    color: white;
+    margin: 15px;
 }
 
 .container2 .social {
@@ -296,6 +330,6 @@ footer {
     justify-content: center;
     align-items: center;
 
-    color:white
+    color:white;
 }
 
