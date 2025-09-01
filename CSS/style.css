@@ -327,9 +327,15 @@ footer {
     background-color: black;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     color:white;
+}
+
+#github {
+    font-size: smaller;
+    color: hsl(0, 0%, 50%);
 }
 
