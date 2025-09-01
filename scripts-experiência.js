@@ -1,4 +1,4 @@
-const ouvidorDeEventosQueTambemEUmaTagANaoSeiPorqueFizUmNomeTaoLongoMasQuemLigaNaoEMesmo = document.querySelector("#special");
+const ancora = document.querySelector("#special");
 
 function enviarCaixaPandora() {
     const aleatorio = Math.floor(Math.random() * 10);
@@ -21,6 +21,6 @@ function enviarCaixaPandora() {
     console.log(aleatorio);
 }
 
-ouvidorDeEventosQueTambemEUmaTagANaoSeiPorqueFizUmNomeTaoLongoMasQuemLigaNaoEMesmo.addEventListener('click',enviarCaixaPandora);
+ancora.addEventListener('click',enviarCaixaPandora);
 // eu sou um dev tão bom
 

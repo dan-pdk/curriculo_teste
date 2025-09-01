@@ -3,7 +3,7 @@ const elementoMessage = document.querySelector("#message");
 const aleatorio = Math.floor(Math.random() * 10);
 console.log(aleatorio);
 
-let placeholder = "";
+let placeholder;
 
 switch (aleatorio) {
     case 0:
@@ -19,16 +19,16 @@ switch (aleatorio) {
         placeholder = "Essa mensagem não será lida...";
         break;
     case 4:
-        placeholder = "Prezado Daniel, pare de 'apertar a braba'...";
+        placeholder = "Prezado Daniel...";
         break;
     case 5:
         placeholder = "Me xingue do que quiser...";
         break;
     case 6:
-        placeholder = "Que curioso, não?...";
+        placeholder = "Sabe programar em Perl?...";
         break;
     case 7:
-        placeholder = "Eu me lembro dos seus pacifismos...";
+        placeholder = "Tenho um patrocínio...";
         break;
     case 8:
         placeholder = "Digite algo logo!...";
@@ -37,7 +37,7 @@ switch (aleatorio) {
         placeholder = "Quem é esse tal de Marquitos?...";
         break;
     case 0:
-        placeholder = "Esta mensagem tem cerca de 1/100³ de aparecer. É hora de apostar na mega-sena";
+        placeholder = "Esta mensagem tem cerca de 1/1000³ de aparecer. É hora de apostar na mega-sena";
         break;
     
     default:
@@ -47,4 +47,26 @@ switch (aleatorio) {
     // eu sei que tem mil e um jeitos de fazer isso melhor, mas eu não ligo. vou usar if e else na próxima e vocês vão ver seus otários muahahhahaha
 }
 
-elementoMessage.setAttribute('placeholder', placeholder)
+// update pra adicionar uma checkbox que não precisava fazer nada demais mas agora vai fazer. muahahahaha
+
+const checkbox = document.querySelector("#recruta");
+
+checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+        placeholder = "Amei suas habilidades! Meu orçamento é de 50 mil...";
+    } else {
+        clearTimeout();
+        placeholder = "Foi mal, fui demitido e não sou mais recrutador...";
+        setTimeout(() => {
+            placeholder = "Mande uma mensagem...";
+            elementoMessage.setAttribute('placeholder', placeholder);
+        }, 3000);
+    }
+    elementoMessage.setAttribute('placeholder', placeholder);
+
+})
+
+// muahahaha
+elementoMessage.setAttribute('placeholder', placeholder);
+
+// passaram-se 20 minutos e eu não sei porque perdi meu tempo com isso.

@@ -36,7 +36,7 @@ body > a {
 
 main {
     width: 60%;
-    height: 80%;
+    height: 90%;
 
     display: flex;
     flex-direction: column;
@@ -46,6 +46,8 @@ main {
     background: linear-gradient(to left, hsl(0, 0%, 20%), hsl(0, 0%, 16%));
     border: 2px solid hsl(0, 0%, 15%);
     border-radius: 15px;
+
+    box-shadow: 3px 3px 3px 1px hsl(0, 0%, 10%);
 }
 
 main h1 {
@@ -135,4 +137,8 @@ form label {
     font-size: 12px;
     color: hsl(0, 0%, 60%);
     margin-left: 8px;
+}
+
+.recruta-container {
+    align-self: center;
 }
