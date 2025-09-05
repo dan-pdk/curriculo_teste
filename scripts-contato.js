@@ -69,4 +69,4 @@ checkbox.addEventListener('change', () => {
 // muahahaha
 elementoMessage.setAttribute('placeholder', placeholder);
 
-// passaram-se 20 minutos e eu não sei porque perdi meu tempo com isso.
+// passaram-se 20 minutos e eu não sei porque perdi meu tempo com isso
